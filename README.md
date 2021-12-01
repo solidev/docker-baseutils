@@ -1,3 +1,10 @@
 # docker-baseutils
 
-Basic alpine image with some utils added
+Basic debian image with some utils added :
+
+- curl
+- git
+- jq
+- yq
+- helm
+- kubectl
