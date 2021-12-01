@@ -8,5 +8,5 @@ RUN apt-get update && \
     install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl && \
     YQ_VERSION=v4.15.1 && \
     YQ_BINARY=yq_linux_amd64 && \
-    curl https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/${YQ_BINARY} && \
+    curl -sL https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/${YQ_BINARY} && \
     install -o root -g root -m 0755 ${YQ_BINARY} /usr/local/bin/yq
